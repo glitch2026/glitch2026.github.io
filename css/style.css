@@ -1,3 +1,14 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #AA3B20;;
+}
+
+
 /* De buitenste container */
 .thumbnail {
     width: 100%;
@@ -20,4 +31,224 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain; /* Behoudt de verhoudingen van je logo */
+}
+
+/* De knoppen links en rechts */
+.custom-btn {
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Het Instagram Icoon */
+.insta-link {
+    text-decoration: none;
+    font-size: 2.5rem; /* Grootte van het icoon */
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.bi-instagram {
+    color: #E1306C; /* HIER PAS JE DE KLEUR AAN */
+}
+
+.insta-link:hover {
+    transform: scale(1.2); /* Vergroot een beetje bij hover */
+}
+
+#buttons {
+   background-color: transparent; /* HIER PAS JE DE KLEUR AAN */
+   justify-content: center;
+   margin-top: -100px !important; 
+   position: relative; /* Zorgt ervoor dat ze 'bovenop' de andere div blijven liggen */
+   z-index: 1;
+}
+
+.UpperLink {
+    color: #F1B33D; /* HIER PAS JE DE KLEUR AAN */
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+/* Zorg dat de kolommetjes mooi uitlijnen op mobiel */
+@media (max-width: 576px) {
+    .row.justify-content-center {
+        gap: 15px;
+    }
+}
+
+
+/* Titel */
+.title-section {
+    padding: 80px 20px 50px;
+    text-align: center;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+}
+
+.year {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+/* Fade-in scroll */
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Marquee */
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 18s linear infinite;
+    font-size: 1.3rem;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Cards */
+.card {
+    background: #1c1c2e;
+    border: none;
+    color: white;
+    transition: 0.4s;
+}
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+}
+
+/* Gallery */
+.gallery img {
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.name-content span {
+    color: #F1B33D; /* kies je kleur */
+}
+
+
+/* Sponsors */
+.sponsors img {
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+.sponsors img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Mobile optimalisatie */
+@media (max-width: 768px) {
+    .year {
+        font-size: 3rem;
+    }
+    .title-section h1 {
+        font-size: 1.8rem;
+    }
+    .marquee span {
+        font-size: 1rem;
+    }
+}
+
+/* Namen Infinite Scroll */
+
+.name-row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.name-track {
+    display: flex;
+    width: max-content;
+}
+
+.name-content {
+    display: flex;
+}
+
+.name-content span {
+    margin: 0 25px;
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+/* Animaties */
+
+.left {
+    animation: scroll-left 200s linear infinite;
+}
+
+.right {
+    animation: scroll-right 200s linear infinite;
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .name-content span {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+}
+
+.name-content span {
+    position: relative;
+    margin: 0 35px; /* ruimte tussen namen */
+}
+
+.name-content span:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -20px;
+    color: #888;
+}
+
+#RodeTekst {
+    color: #AA3B20;
+}
+
+#BekijkAlle{
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: large;
+    transition: all 0.3s ease;
+    color: #F1B33D;
+
 }
