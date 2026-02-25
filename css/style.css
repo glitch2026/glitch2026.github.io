@@ -244,8 +244,8 @@ body{
 }
 
 #sponsorVanessa {
-color: #AA3B20;
-    
+color: #595959;
+    z-index: 50;
 }
 
 #BekijkAlle{
@@ -258,3 +258,4 @@ color: #AA3B20;
 
 
 }
+
