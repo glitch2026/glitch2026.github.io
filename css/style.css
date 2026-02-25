@@ -243,9 +243,14 @@ body{
     color: #AA3B20;
 }
 
-#sponsorVanessa {
-color: #595959;
-    z-index: 50;
+#Vanessa {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: large;
+    transition: all 0.3s ease;
+    color: #e5e5e5;
+
 }
 
 #BekijkAlle{
@@ -256,6 +261,4 @@ color: #595959;
     transition: all 0.3s ease;
     color: #F1B33D;
 
-
 }
-
