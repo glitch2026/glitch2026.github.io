@@ -76,7 +76,7 @@ const names = [
 "Siebe", "Basiel", "Sep", "Lowie", "Marte", "Balil", "Brent", "Preben", "Alperen", "Duncan", "Beau", "Amr", "Efe",
 "Hamza", "Otman", "Lucas", "Niek", "Tygho", "Tibo", "Jelko", "Anouar", "Yana", "Tars", "Noa", "Siebe","Tycho", "Ismail",
 "Ali", "Izer", "Stef", "Ylano", "Krieke", "Quinten", "Vic", "Noah", "Joran", "Rune", "Gauthier", "Dries", "Fille",
-"Stef", "Jasper", "Liam", "Jasper", "Emiel", "Brecht", "Nathan", "Milan", "Lukas", "Henri", "Arne", "Brain", "wout",
+"Stef", "Jasper", "Liam", "Jasper", "Emiel", "Brecht", "Nathan", "Milan", "Lukas", "Henri", "Arne", "Brian", "Wout",
 "Lukas", "Tore", "Pjotr", "Rube", "Niels", "Arthur", "Thijmen", "Victor", "Rhune", "Axl", "Kasper", "Tibe", 
 "Lennert", "Pedro", "Torben", "Maano", "Simon", "Mazen", "Jelle", "Dion", "Mathis", "Batuhan", "Benjamin", "Yano",
 "Brent", "Sam", "Mylo", "Leandro", "Rafael", "Hanne", "Nona", "Miel", "Sabrine", "Paulien", "Naira", "Janne",
@@ -105,6 +105,7 @@ function fillRow(row, elementId, duplicateId){
 fillRow(row1, "row1", "row1-duplicate");
 fillRow(row2, "row2", "row2-duplicate");
 fillRow(row3, "row3", "row3-duplicate");
+
 
 
 
